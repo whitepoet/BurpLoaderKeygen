@@ -34,6 +34,11 @@ cd "/Applications/Burp Suite Professional.app/Contents/Resources/app"
 
 3. 修改`/Applications/Burp Suite Professional.app/Contents/vmoptions.txt`, 增加两行
 ```
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/java.lang=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
+--add-opens=java.base/jdk.internal.org.objectweb.asm.Opcodes=ALL-UNNAMED
 -javaagent:BurpLoaderKeygen.jar
 -noverify
 ```
